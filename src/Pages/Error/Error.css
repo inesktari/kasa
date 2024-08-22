@@ -1,0 +1,26 @@
+.Error_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_404 {
+    height: 263px;
+    width: 597px;
+    margin: 100px 0 100px 0;
+}
+
+.Error_text{
+    color: var(--second-color);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.Error_return_HomePage {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 80px 0 140px 0;
+}
