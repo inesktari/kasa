@@ -5,7 +5,7 @@ import "./About.css";
 function About() {
   return (
     <div>
-      <Banner />
+      <Banner page="About" />
       <h3>les 4 composants de type accordéon collapse</h3>
     </div>
   );

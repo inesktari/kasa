@@ -6,7 +6,7 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div>
-      <Banner />
+      <Banner page="HomePage" />
       <Gallery />
     </div>
   );

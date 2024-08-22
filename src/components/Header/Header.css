@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* max-width: 1240px; */
     padding: 50px 100px 50px 100px;
 }
 
@@ -34,7 +33,6 @@ nav li {
 
 nav li a {
     color: var(--main-color);
-    /* text-decoration: none; */
 }
 
 nav li a:hoover {
@@ -47,5 +45,9 @@ nav li a:visited {
 
 nav li a.active {
     color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+nav li a:active {
     border-bottom: 2px solid var(--main-color);
 }
