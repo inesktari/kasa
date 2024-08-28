@@ -1,0 +1,58 @@
+.collapse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+}
+
+.collapse-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  color: var(--third-color);
+  background-color: var(--second-color);
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 20px 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.collapse-icon {
+  width: 24px;
+  height: 14px;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+  }
+  
+.collapse-icon.open {
+  transform: rotate(-180deg);
+}
+
+.collapse-content {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgba(246,246,246,0.45);
+  width: 70%;
+  padding: 0px 20px;
+  border-radius: 5px;
+  border:none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; 
+  position: relative;
+  z-index: 1;
+}
+
+.collapse-content.open {
+  max-height: none;
+  padding: 15px 20px;}
+
+.collapse-content.closed {
+  max-height: 0;
+  padding: 0 20px;}
