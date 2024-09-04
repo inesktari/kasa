@@ -28,6 +28,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  cursor: pointer;
   }
 
   .card::after {
