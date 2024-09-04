@@ -15,12 +15,18 @@ function Header() {
       <nav className="header_menu">
         <ul>
           <li>
-            <NavLink to="/" activeClassName="active">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+            >
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink to="/About" activeClassName="active">
+            <NavLink
+              to="/About"
+              className={({ isActive }) => (isActive ? "active" : undefined)}
+            >
               A Propos
             </NavLink>
           </li>
@@ -31,5 +37,3 @@ function Header() {
 }
 
 export default Header;
-
-// !!!!!!!!!!!! tester la suppression de la balise header dans la function header !!!!!!!!!!

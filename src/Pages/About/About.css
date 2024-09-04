@@ -1,1 +1,3 @@
-/* ajouter 8px avant et après les collapse*/
+.All-collapses {
+    padding: 8px 0 8px 0;
+}

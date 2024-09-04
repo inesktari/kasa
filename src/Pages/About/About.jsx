@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
       <Banner page="About" />
-      <div>
+      <div className="All-collapses">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
