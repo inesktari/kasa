@@ -28,7 +28,7 @@
   transition: transform 0.4s ease-in-out;
   cursor: pointer;
   }
-  
+
 .collapse-icon.open {
   transform: rotate(-180deg);
 }
@@ -44,15 +44,53 @@
   border:none;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; 
+  opacity: 0;
+  transition: max-height 0.2s ease-in-out, opacity 0.5s linear;
   position: relative;
   z-index: 1;
 }
 
 .collapse-content.open {
-  max-height: none;
-  padding: 15px 20px;}
+  max-height: 500px;
+  opacity: 1;
+}
 
 .collapse-content.closed {
   max-height: 0;
-  padding: 0 20px;}
+  opacity: 0;
+}
+
+.collapse-text {
+  transform: translateY(-20px);         
+  opacity: 0;                             
+}
+
+.collapse-content.open .collapse-text {
+  animation: slideTextOpen 0.2s ease-in-out 0.2s forwards;
+}
+
+.collapse-content.closed .collapse-text {
+  animation: slideTextClose 0.2s ease-in-out forwards;     
+}
+
+@keyframes slideTextOpen {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextClose {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
