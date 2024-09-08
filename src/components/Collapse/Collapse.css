@@ -1,16 +1,22 @@
 .collapse-container {
+  margin: 30px 0 30px 0;
+}
+
+.collapse-container-About {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 30px 0 30px 0;
+}
+
+.collapse-container-Housing {
+  width: 100%;
 }
 
 .collapse-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
   color: var(--third-color);
   background-color: var(--second-color);
   border: none;
@@ -20,6 +26,14 @@
   border-radius: 5px;
   position: relative;
   z-index: 2;
+}
+
+.collapse-button-width-About {
+  width: 70%;
+}
+
+.collapse-button-width-Housing {
+  width: 100%;
 }
 
 .collapse-icon {

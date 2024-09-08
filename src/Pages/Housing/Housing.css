@@ -1,0 +1,12 @@
+.Collapse-big-container-Housing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.collapse-bigest-container {
+    margin: 0 100px 0 100px;
+}

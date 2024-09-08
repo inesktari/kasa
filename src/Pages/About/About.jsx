@@ -6,8 +6,8 @@ import "./About.css";
 function About() {
   return (
     <div>
-      <Banner page="About" />
-      <div className="All-collapses">
+      <Banner />
+      <div className="Collapse-big-container-About">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les

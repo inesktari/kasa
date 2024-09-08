@@ -63,10 +63,11 @@ function Housing() {
         </div>
 
         <div>Rating</div>
-
-        <div>
-          <Collapse title="Description"></Collapse>
-          <Collapse title="Équipements"></Collapse>
+        <div className="collapse-bigest-container">
+          <div className="Collapse-big-container-Housing">
+            <Collapse title="Description" page="Housing"></Collapse>
+            <Collapse title="Équipements" page="Housing"></Collapse>
+          </div>
         </div>
       </div>
     )
