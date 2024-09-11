@@ -52,7 +52,6 @@
   font-size: 18px;
   font-weight: 400;
   background-color: rgba(246,246,246,0.45);
-  width: 70%;
   padding: 0px 20px;
   border-radius: 5px;
   border:none;
@@ -69,6 +68,18 @@
   opacity: 1;
 }
 
+.collapse-content-About {
+  width: 70%;
+}
+
+.collapse-content-Housing {
+  width: 100%;
+}
+
+.collapse-content-Housing.collapse-icon.open {
+  max-width: 500px;
+}
+
 .collapse-content.closed {
   max-height: 0;
   opacity: 0;
@@ -76,7 +87,13 @@
 
 .collapse-text {
   transform: translateY(-20px);         
-  opacity: 0;                             
+  opacity: 0;
+  font-size: 18px;
+  font-weight: 400;  
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-stretch: ultra-expanded;                
 }
 
 .collapse-content.open .collapse-text {
@@ -107,4 +124,10 @@
     transform: translateY(-20px);
     opacity: 0;
   }
+}
+
+ul {
+  list-style: none;
+  justify-content: flex-start;
+  padding-left: 0px;
 }

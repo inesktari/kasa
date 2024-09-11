@@ -32,7 +32,13 @@ function Collapse({ title, children, page }) {
           className={`collapse-icon ${isOpen ? "open" : ""}`}
         />
       </button>
-      <div className={`collapse-content ${isOpen ? "open" : "closed"}`}>
+      <div
+        className={`collapse-content ${isOpen ? "open" : "closed"} ${
+          page === "Housing"
+            ? "collapse-content-Housing"
+            : "collapse-content-About"
+        }`}
+      >
         <div className="collapse-text">{children}</div>
       </div>
     </div>

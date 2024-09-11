@@ -4,6 +4,8 @@ import Carrousel from "../../components/Carrousel/Carrousel.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import { fetchProperties } from "../../components/API/API.jsx";
 import "./Housing.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function Housing() {
   const { id } = useParams();
@@ -51,22 +53,61 @@ function Housing() {
     accommodation && (
       <div>
         <Carrousel />
+        <div Class="Container-Informations-Housing">
+          <div class="Title-Town-tags-container">
+            <h1 className="Title-Housing">{accommodation.title}</h1>
+            <h2 className="Town-Title-Housing">{accommodation.location}</h2>
 
-        <h1>{accommodation.title}</h1>
-        <h3>{accommodation.location}</h3>
+            <div className="Tag-Housing">
+              <div className="Tag-Housing-Unit">
+                {accommodation.tags.map((item, index) => (
+                  <button key={index}>{item}</button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div class="Host-Rating-container">
+            <div className="Host">
+              <h3 className="Host-Name-Housing">
+                {accommodation.host.name.split(" ")[0]}
+                <br />
+                {accommodation.host.name.split(" ")[1]}
+              </h3>
+              <img
+                src={accommodation.host.picture}
+                alt={accommodation.host.name}
+              />
+            </div>
 
-        <div>{accommodation.tags}</div>
+            <div className="rating">
+              {[...Array(5)].map((_, index) => {
+                const ratingValue = index + 1;
 
-        <div>
-          <h3>{accommodation.host.name}</h3>
-          <img src={accommodation.host.picture} alt={accommodation.host.name} />
+                return (
+                  <FontAwesomeIcon
+                    key={index}
+                    icon={faStar}
+                    className={`star ${
+                      ratingValue <= accommodation.rating ? "selected" : ""
+                    }`}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
-
-        <div>Rating</div>
         <div className="collapse-bigest-container">
           <div className="Collapse-big-container-Housing">
-            <Collapse title="Description" page="Housing"></Collapse>
-            <Collapse title="Équipements" page="Housing"></Collapse>
+            <Collapse title="Description" page="Housing">
+              {accommodation.description}
+            </Collapse>
+            <Collapse title="Équipements" page="Housing">
+              <ul>
+                {accommodation.equipments.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </Collapse>
           </div>
         </div>
       </div>
