@@ -14,7 +14,10 @@ function Banner({ page }) {
       <div className={`banner-overlay ${overlayClass}`}></div>
       {page === "HomePage" && (
         <div className="banner-text">
-          <p>Chez vous, partout et ailleurs</p>
+          <p>
+            Chez vous,
+            <br /> partout et ailleurs
+          </p>
         </div>
       )}
     </div>

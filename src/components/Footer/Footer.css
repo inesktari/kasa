@@ -17,3 +17,7 @@ footer {
     font-size: 24px;
     font-weight: 500;
 }
+
+.footer_text br {
+    display: none;
+}

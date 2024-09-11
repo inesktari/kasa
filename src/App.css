@@ -37,3 +37,92 @@
   }
 }
 
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+.card h2 {
+  font-size: 15px;
+  margin-left: 5px;
+  padding:10px;
+  }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+.header {
+  padding: 20px;
+}
+
+.header_logo {
+  height: 47px;
+}
+
+nav li {
+  padding: 0 0 0 25px;
+  text-transform:uppercase;
+  font-size: 12px;
+}
+
+.banner-text {
+  font-size: 24px;
+  text-align: start;
+  justify-content: start;  
+  margin-right: 10px;
+  position: absolute;
+  top:0;
+  left:50px;
+}
+
+.banner {
+  padding: 0 20px 0 20px;
+}
+
+.banner img {
+  height: 111px;
+  border-radius: 10px;
+}
+
+.banner-overlay {
+  margin: 0 20px 0 20px;
+  border-radius: 10px;
+}
+
+.banner-text br {
+  display: flex;
+}
+
+
+.container {
+  background-color: transparent;
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-column-gap: 5%;*/
+  grid-row-gap: 20px;
+  padding: 0px;
+  /*border-radius: 10px;
+  box-sizing: border-box; */
+}
+
+.card {
+  height: 255px;
+}
+
+.footer_logo{
+  margin-bottom: 0px;
+}
+
+.footer_text {
+  font-size: 12px;
+  margin-bottom: 50px; 
+}
+
+.footer_text br {
+  display: flex;
+}
+}
