@@ -2,3 +2,18 @@
     flex-direction: column;
     padding: 8px 0 8px 0;
 }
+
+.collapse-container-About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapse-button-width-About {
+    width: 70%;
+}
+
+.collapse-content-About {
+    width: 70%;
+}

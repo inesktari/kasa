@@ -2,14 +2,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 100px;
-    /* position: relative; */
 }
 
 .collapse-bigest-container {
     margin: 0 100px 0 100px;
+}
+
+.collapse-container-Housing {
+    flex: 1;
+    min-height: 100%;
+}
+
+.collapse-button-width-Housing {
+    width: 100%;
+}
+
+.collapse-content-Housing {
+    width: 100%;
+}
+
+.collapse-content-Housing.collapse-icon.open {
+    max-width: 500px;
 }
 
 .Title-Housing {
@@ -76,23 +92,34 @@ color: var(--second-color);
 .rating {
     display: inline-block;
     margin-top: 20px;
-  }
+}
   
-  .rating .star {
+.rating .star {
     width: 24.75px;
     height: 24px;
     color: #E3E3E3;
     padding-left: 10px;
 
-  }
+}
   
-  .rating .star.selected {
+.rating .star.selected {
     color: var(--second-color);
-  }
+}
 
-  .Container-Informations-Housing {
+.Container-Informations-Housing {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 100px;
-  }
+}
+
+ul {
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0;
+}
+
+div.collapse-content.open.collapse-content-Housing {
+    padding: 20px;
+}

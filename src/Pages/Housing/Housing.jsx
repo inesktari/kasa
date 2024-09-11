@@ -52,7 +52,10 @@ function Housing() {
   return (
     accommodation && (
       <div>
-        <Carrousel />
+        <div className="housing-container">
+          <Carrousel pictures={accommodation.pictures} />
+        </div>
+
         <div Class="Container-Informations-Housing">
           <div class="Title-Town-tags-container">
             <h1 className="Title-Housing">{accommodation.title}</h1>
