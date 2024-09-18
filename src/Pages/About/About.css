@@ -1,6 +1,7 @@
 .Collapse-big-container-About {
     flex-direction: column;
     padding: 8px 0 8px 0;
+    flex-grow: 1;
 }
 
 .collapse-container-About {

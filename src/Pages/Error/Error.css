@@ -24,3 +24,7 @@
     text-decoration: underline;
     margin: 80px 0 140px 0;
 }
+
+.Error_text br {
+    display: none;
+}

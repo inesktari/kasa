@@ -51,13 +51,13 @@ function Housing() {
 
   return (
     accommodation && (
-      <div>
+      <div className="All-informations-housing">
         <div className="housing-container">
           <Carrousel pictures={accommodation.pictures} />
         </div>
 
-        <div Class="Container-Informations-Housing">
-          <div class="Title-Town-tags-container">
+        <div className="Container-Informations-Housing">
+          <div className="Title-Town-tags-container">
             <h1 className="Title-Housing">{accommodation.title}</h1>
             <h2 className="Town-Title-Housing">{accommodation.location}</h2>
 
@@ -69,7 +69,7 @@ function Housing() {
               </div>
             </div>
           </div>
-          <div class="Host-Rating-container">
+          <div className="Host-Rating-container">
             <div className="Host">
               <h3 className="Host-Name-Housing">
                 {accommodation.host.name.split(" ")[0]}

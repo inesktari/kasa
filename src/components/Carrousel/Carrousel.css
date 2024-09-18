@@ -1,53 +1,52 @@
 .carrousel {
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    height: 415px;
-    margin: 0 100px 30px 100px;
-  }
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  height: 415px;
+  margin: 0 100px 30px 100px;
+}
   
-  .carrousel-inner {
-    width: 100%;
-    height: auto;
-  }
+.carrousel-inner {
+  width: 100%;
+  height: 100%;
+}
   
-  .carrousel-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center -200px;
-  }
+.carrousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   
-  .carrousel-index {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    color: var(--third-color);
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 500;
-  }
+.carrousel-index {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  color: var(--third-color);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
 
-  .carrousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    z-index: 2;
-    cursor: pointer;
-  }
+.carrousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 2;
+  cursor: pointer;
+}
   
-  .carrousel-button.prev {
-    left: 20px;
-  }
-  
-  .carrousel-button.next {
-    right: 20px;
-  }
-  
-  .carrousel-button img {
-    width: 46px;
-    height: 79px;
-  }
+.carrousel-button.prev {
+  left: 20px;
+}
+
+.carrousel-button.next {
+  right: 20px;
+}
+
+.carrousel-button img {
+  width: 46px;
+  height: 79px;
+}

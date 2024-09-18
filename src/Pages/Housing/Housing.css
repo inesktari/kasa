@@ -51,10 +51,10 @@
 
 .Tag-Housing-Unit {
     display: flex;
-    }
+    flex-wrap: wrap;
+}
 
 .Tag-Housing-Unit button{
-    /* width: 115px; */
     padding: 0 20px;
     height: 25px;
     border-radius: 10px;
@@ -98,8 +98,7 @@ color: var(--second-color);
     width: 24.75px;
     height: 24px;
     color: #E3E3E3;
-    padding-left: 10px;
-
+    padding-left: 8px;
 }
   
 .rating .star.selected {
@@ -111,6 +110,7 @@ color: var(--second-color);
     flex-direction: row;
     justify-content: space-between;
     margin: 0 100px;
+    gap:30px;
 }
 
 ul {
@@ -121,5 +121,13 @@ ul {
 }
 
 div.collapse-content.open.collapse-content-Housing {
-    padding: 20px;
+    padding: 5px 20px;
+}
+
+.Title-Town-tags-container {
+    width: 70%;
+}
+
+.All-informations-housing {
+    flex-grow: 2;
 }

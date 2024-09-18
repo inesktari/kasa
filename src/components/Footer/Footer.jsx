@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import LOGO_white from "../../assets/LOGO_white.svg";
 import "./Footer.css";
 

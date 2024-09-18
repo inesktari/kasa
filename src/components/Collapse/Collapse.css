@@ -63,7 +63,8 @@
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.5;
-  font-stretch: ultra-expanded;                
+  font-stretch: ultra-expanded;
+  padding: 10px 0 5px 0;              
 }
 
 .collapse-content.open .collapse-text {
