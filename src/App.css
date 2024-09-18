@@ -8,6 +8,10 @@ main {
   flex-grow: 1;
 }
 
+html, body {
+  height: 100%;
+}
+
 /****** Media queries ***********/
 @media (max-width: 1024px) {
 
@@ -81,13 +85,13 @@ main {
 }
 
 .header_logo {
-  height: 47px;
+  height: 46px;
 }
 
 nav li {
-  padding: 0 0 0 25px;
+  padding: 0 0 0 15px;
   text-transform:uppercase;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .banner-text {
