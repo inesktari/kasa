@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./Card.css";
 
 function Card({ accommodation }) {
-  // Card reçoit le prop "accommodation", qui représente un logement avec toutes ses propriétés.
-
   const navigate = useNavigate();
 
   const handleClick = () => {

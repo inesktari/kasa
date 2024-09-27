@@ -5,14 +5,13 @@ import "./Carrousel.css";
 
 function Carrousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // Gérer l'image précédente
+
   const handlePrevious = () => {
     const isFirstImage = currentIndex === 0;
     const newIndex = isFirstImage ? pictures.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
-  // Gérer l'image suivante
   const handleNext = () => {
     const isLastImage = currentIndex === pictures.length - 1;
     const newIndex = isLastImage ? 0 : currentIndex + 1;

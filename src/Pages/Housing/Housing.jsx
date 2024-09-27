@@ -9,16 +9,11 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 function Housing() {
   const { id } = useParams();
-  // "useParams" est utilisée pour récupérer l'id du logement
-  // depuis l'URL
   const [accommodation, setAccommodation] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    // "useEffect" permet de déclencher une requête API
-    // pour récupérer les logements, puis chercher celui
-    // qui correspond à l'id concerné.
     const fetchData = async () => {
       try {
         const accommodationsData = await fetchProperties();
